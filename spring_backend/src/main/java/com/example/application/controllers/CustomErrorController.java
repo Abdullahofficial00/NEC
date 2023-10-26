@@ -39,8 +39,5 @@ public class CustomErrorController implements ErrorController {
         return authentication != null ? authentication.getName() : "Anonymous";
     }
 
-    @Autowired
-    public String getErrorPath() {
-        return PATH;
-    }
+    
 }
