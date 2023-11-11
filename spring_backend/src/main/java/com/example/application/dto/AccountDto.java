@@ -25,6 +25,8 @@ public class AccountDto implements Serializable {
     @NotBlank(message = "Password cannot be blank")
     @Size(min = 6, max = 50, message = "Password must be between 6 and 50 characters")
     String password;
+    //password
+
     @NotNull(message = "Verification status for phone cannot be null")
     Integer isVerifiedPhone;
     @NotNull(message = "Verification status for Email cannot be null")

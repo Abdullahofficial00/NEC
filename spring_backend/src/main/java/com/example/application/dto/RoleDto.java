@@ -5,9 +5,7 @@ import lombok.Value;
 
 import java.io.Serializable;
 
-/**
- * DTO for {@link com.example.application.entities.Role}
- */
+
 @Value
 public class RoleDto implements Serializable {
     Integer id;
