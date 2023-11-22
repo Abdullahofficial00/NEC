@@ -22,7 +22,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/auth")
-public class Auth_Controller {
+public class    Auth_Controller {
     protected static final String INVALID_USERNAME_OR_PASSWORD = " Invalid Username or Password  !!";
     protected static final String CREDENTIALS_INVALID = "Credentials Invalid !!";
     private final UserDetailsService userDetailsService;
