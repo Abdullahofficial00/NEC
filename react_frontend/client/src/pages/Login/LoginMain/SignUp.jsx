@@ -17,7 +17,7 @@ import axios from 'axios';
 
 
 const SignUp = ({ handleResponse }) => {
-    const baseUrl = process.env.REACT_APP_BASE_URL;
+    const baseUrl = "http://localhost:8081/api/v1";
     const [error, setError] = useState({})
     const [loading, setLoading] = useState(false);
     const [user, setUser] = useState({})
@@ -74,9 +74,11 @@ const SignUp = ({ handleResponse }) => {
         e.preventDefault();
         setLoading(true);
         const registerInfo = {
+            userId:1122212122112,
             username : user.displayName,
             email: user.email,
-            password: user.password
+            password: user.password,
+            rule:"ADMIN"
         }
         try{
             // Register With node-server & mongodb

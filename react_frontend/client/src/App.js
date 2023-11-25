@@ -4,7 +4,7 @@ import './App.css';
 import Homepage from './pages/Homepage';
 import Login from './pages/Login';
 import Register from './pages/Register';
-import SignInForm from './components/Login/LoginMain/SignInForm';
+import SignInForm from './pages/Login/LoginMain/SignInForm';
 
 function App() {
   return (
