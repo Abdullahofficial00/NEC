@@ -14,7 +14,7 @@ const SignIn = ({ handleResponse }) => {
     const { user, loading, error, dispatch } = useContext(AuthContext);
     const { register, handleSubmit, watch, formState: { errors } } = useForm();
     const navigate = useNavigate();
-    const baseUrl = process.env.REACT_APP_BASE_URL;
+    const baseUrl = "http://localhost:8081/api/v1";
 
     const [show, setShow] = useState(true);
 
@@ -77,4 +77,4 @@ const SignIn = ({ handleResponse }) => {
     );
 };
 
-export default SignIn;s
+export default SignIn;
