@@ -41,7 +41,7 @@ const SignInForm = () => {
                 <div className="panel left-panel">
                     <div className="content">
                         <h3>New here ?</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi beatae quas magnam!</p>
+                        <p>Its right time to get cure of your health!</p>
                         <button className="iBtn transparent" onClick={() => setSignUp(true)}>Sign Up</button>
                     </div>
                     <img src={`${log}`} alt="" className="pImg" />
@@ -50,7 +50,7 @@ const SignInForm = () => {
                 <div className="panel right-panel">
                     <div className="content">
                         <h3>One of us ?</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi beatae quas magnam!</p>
+                        <p>Cick here to Login to our health care system!</p>
                         <button className="iBtn transparent" onClick={() => setSignUp(false)}>Sign In</button>
                     </div>
                     <img src={`${register}`} alt="" className="pImg" />

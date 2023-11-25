@@ -74,11 +74,10 @@ const SignUp = ({ handleResponse }) => {
         e.preventDefault();
         setLoading(true);
         const registerInfo = {
-            userId:1122212122112,
             username : user.displayName,
             email: user.email,
             password: user.password,
-            rule:"ADMIN"
+            isDoctor:1
         }
         try{
             // Register With node-server & mongodb
