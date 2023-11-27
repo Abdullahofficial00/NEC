@@ -14,7 +14,7 @@ const SignIn = ({ handleResponse }) => {
     const { user, loading, error, dispatch } = useContext(AuthContext);
     const { register, handleSubmit, watch, formState: { errors } } = useForm();
     const navigate = useNavigate();
-    const baseUrl = "http://localhost:8081/api/v1";
+    const baseUrl = process.env.REACT_APP_BASE_URL;
 
     const [show, setShow] = useState(true);
 
@@ -32,7 +32,12 @@ const SignIn = ({ handleResponse }) => {
                 text: 'Successfully Sign In',
                 timer: 2000
             })
-            navigate("/")
+            if (res.data.details.isDoctor) {
+                navigate("/dashboard");
+            }
+            else if(res.data.details.isAdmin){
+                navigate("/");
+            }
         } catch (err) {
             dispatch({ type: "LOGIN_FAILURE", payload: err.response.data })
         }
@@ -40,22 +45,7 @@ const SignIn = ({ handleResponse }) => {
 
     return (
         <form className="sign-in-form" onSubmit={handleSubmit(onSubmit)}>
-            <Toast show={show} onClose={() => setShow(!show)} className="signInToast">
-                <Toast.Header>
-                    <strong className="mr-auto">Important Info</strong>
-                </Toast.Header>
-                <Toast.Body>Use this account to sign in as a admin <br />
-                    <hr />
-                    <div className='bg-dark text-white p-2 px-3 rounded'>
-                        email : Admin@gmail.com <br />
-                        password : 1234 <br />
-                    </div>
-                    <hr />
-                    <div className='bg-primary p-2 rounded text-white'>
-                        Please Don't abuse the facility
-                    </div>
-                </Toast.Body>
-            </Toast>
+            
             <h2 className="title">Sign in</h2>
             <div className="input-field">
                 <span className="fIcon"><FaEnvelope /></span>
