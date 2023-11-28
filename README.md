@@ -39,40 +39,59 @@ NEC aims to simplify and enhance the healthcare experience by providing a centra
 - **Styling**: CSS (or preferred styling solution)
 - **Deployment**: Docker, Heroku, or your preferred hosting platform.
 
-## Getting Started
+# Getting Started
 
-Follow these steps to set up the NEC project locally.
-### Step 1: Clone the Repository
+## Step 1: Clone the Repository
 
 ```bash
 git clone https://github.com/Abdullahofficial00/NEC.git
 cd NEC
-**RUN Backend**
-### Prerequisites
+```
 
-1. Node.js and npm
-2. MongoDB installed and running
-3. (Any additional prerequisites...)
-*Step 2: Set Up MongoDB*
-Create a MongoDB account by visiting MongoDB and signing up.
-Note the "Connect to your application URI" for the database.
-Add your current IP address to the MongoDB database's IP whitelist in the .env file
+## Step 2: Set Up MongoDB
+
+1. **Prerequisites:**
+   - Node.js and npm
+   - MongoDB installed and running
+   - (Any additional prerequisites...)
+
+2. **Create a MongoDB Account:**
+   - Visit [MongoDB](https://www.mongodb.com/) and sign up.
+   - Note the "Connect to your application URI" for the database.
+
+3. **Add IP to Whitelist:**
+   - Add your current IP address to the MongoDB database's IP whitelist in the `.env` file.
+
 ```bash
 cd server
 npm install
+```
+
+## Run Backend
+
 ```bash
 npm start
-Now the backend is running.
-**RUN Frontend**
-In the .env file replace the port you set on the backend end side on default it is written 8081
+```
+
+Now, the backend is running.
+
+## Run Frontend
+
+1. In the `.env` file, replace the port with the one you set on the backend side. By default, it is set to 8081.
+
 ```bash
-cd NEC
-cd react_frontend
-cd client
+cd NEC/react_frontend/client
 npm install
-*Run it*
+```
+
+2. Run the frontend:
+
+```bash
 npm start
-**Ready to Use**
-It will open your default browser and open the application. If you want to open it in your customized browser copy the link from the shell and paste to the browser.
+```
+
+## Ready to Use
+
+The application will open in your default browser. If you prefer a customized browser, copy the link from the shell and paste it into your browser.
 
 
