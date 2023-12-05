@@ -41,8 +41,9 @@
   content: "";
   position: absolute;
   width: 2000px;
-  height: 2000px;border-radius: 50%;
-  background: linear-gradient(-45deg, #795cf9, #7355F7);
+  height: 2000px;
+  border-radius: 20px; /* Adjust this value to control the corner roundness */
+  background: linear-gradient(-45deg, purple, purple);
   top: -10%;
   right: 48%;
   transform: translateY(-50%);
@@ -149,8 +150,8 @@
 }
 
 .social-icon:hover {
-  border: 1px solid #6e4dff;
-  color: #6e4dff;
+  border: 1px solid purple;
+  color: purple;
 }
 
 .input-field input::placeholder {
@@ -165,7 +166,7 @@
   outline: none;
   border-radius: 50px;
   cursor: pointer;
-  background-color: #7355F7;
+  background-color: purple;
   color: #fff;
   text-transform: uppercase;
   font-weight: 600;
@@ -174,7 +175,7 @@
   transition: .5s;
 }
 .iBtn:hover{
-  background: #4C25F5;
+  background: purple;
 }
 
 .social-text {
