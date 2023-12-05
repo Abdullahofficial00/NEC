@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { FaEnvelope, FaLock } from 'react-icons/fa';
-import SocialSignUp from './SocialSignUp';
 import { useForm } from "react-hook-form";
 import Spinner from 'react-bootstrap/Spinner';
 import axios from 'axios';
@@ -61,8 +60,8 @@ const SignIn = ({ handleResponse }) => {
             <button className="iBtn" type="submit" value="sign In" >
                 {loading ? <Spinner animation="border" variant="info" /> : "Sign In"}
             </button>
-            <p className="social-text">Or Sign in with social platforms</p>
-            <SocialSignUp handleResponse={handleResponse} />
+            {/* <p className="social-text">Or Sign in with social platforms</p>
+            <SocialSignUp handleResponse={handleResponse} /> */}
         </form>
     );
 };
