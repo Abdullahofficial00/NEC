@@ -1,4 +1,4 @@
-# NEC - National Electronic Health Care
+# NEC - National Electronic Health Care (Built by Rayan Rasheed)
 
 NEC is a comprehensive platform that facilitates electronic healthcare services, streamlining the appointment process for both doctors and patients.
 
